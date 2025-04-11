@@ -19,103 +19,116 @@ import AnimatedFlatList from './screens/animated-flat-list';
 import Dropdown from './screens/dropdown';
 import CircularCarouselAnimation from './screens/circular-carousel-animation';
 import SegmentedControl from './screens/segmented-control';
+import ShakeText from './screens/shake-text';
 
 const Stack = createNativeStackNavigator();
 
+const options = {header: () => null};
+const {
+  interpolateColor,
+  interpolateScrollView,
+  scrollViewFromScratch,
+  colorPicker,
+  segmentedControl,
+  magicLayoutAnimation,
+  animatedFlatList,
+  circularCarouselAnimation,
+  circularProgress,
+  clock,
+  slidingCounter,
+  pinchGestureHandlerScreen,
+  panGestureHandler,
+  perspectiveMenu,
+  doubleTap,
+  introduce,
+  rippleEffect,
+  swipeToDelete,
+  dropdown,
+  shakeText,
+} = screenNames;
+
 const AppStack = () => {
   return (
-    <Stack.Navigator initialRouteName={screenNames.segmentedControl}>
+    <Stack.Navigator initialRouteName={shakeText}>
+      <Stack.Screen name={shakeText} component={ShakeText} options={options} />
       <Stack.Screen
-        name={screenNames.segmentedControl}
+        name={segmentedControl}
         component={SegmentedControl}
-        options={{header: () => null}}
+        options={options}
       />
       <Stack.Screen
-        name={screenNames.circularCarouselAnimation}
+        name={circularCarouselAnimation}
         component={CircularCarouselAnimation}
-        options={{header: () => null}}
+        options={options}
       />
+      <Stack.Screen name={dropdown} component={Dropdown} options={options} />
       <Stack.Screen
-        name={screenNames.dropdown}
-        component={Dropdown}
-        options={{header: () => null}}
-      />
-      <Stack.Screen
-        name={screenNames.animatedFlatList}
+        name={animatedFlatList}
         component={AnimatedFlatList}
-        options={{header: () => null}}
+        options={options}
       />
       <Stack.Screen
-        name={screenNames.magicLayoutAnimation}
+        name={magicLayoutAnimation}
         component={MagicLayoutAnimation}
-        options={{header: () => null}}
+        options={options}
       />
+      <Stack.Screen name={clock} component={Clock} options={options} />
       <Stack.Screen
-        name={screenNames.clock}
-        component={Clock}
-        options={{header: () => null}}
-      />
-      <Stack.Screen
-        name={screenNames.slidingCounter}
+        name={slidingCounter}
         component={SlidingCounter}
-        options={{header: () => null}}
+        options={options}
       />
       <Stack.Screen
-        name={screenNames.perspectiveMenu}
+        name={perspectiveMenu}
         component={PerspectiveMenu}
-        options={{header: () => null}}
+        options={options}
       />
       <Stack.Screen
-        name={screenNames.rippleEffect}
+        name={rippleEffect}
         component={RippleEffect}
-        options={{header: () => null}}
+        options={options}
       />
       <Stack.Screen
-        name={screenNames.swipeToDelete}
+        name={swipeToDelete}
         component={SwipeToDelete}
-        options={{header: () => null}}
+        options={options}
       />
       <Stack.Screen
-        name={screenNames.circularProgress}
+        name={circularProgress}
         component={CircularProgress}
-        options={{header: () => null}}
+        options={options}
       />
       <Stack.Screen
-        name={screenNames.colorPicker}
+        name={colorPicker}
         component={ColorPicker}
-        options={{header: () => null}}
+        options={options}
       />
       <Stack.Screen
-        name={screenNames.scrollViewFromScratch}
+        name={scrollViewFromScratch}
         component={ScrollViewFromScratch}
-        options={{header: () => null}}
+        options={options}
       />
+      <Stack.Screen name={doubleTap} component={DoubleTap} options={options} />
       <Stack.Screen
-        name={screenNames.doubleTap}
-        component={DoubleTap}
-        options={{header: () => null}}
-      />
-      <Stack.Screen
-        name={screenNames.pinchGestureHandlerScreen}
+        name={pinchGestureHandlerScreen}
         component={PinchGestureHandler}
-        options={{header: () => null}}
+        options={options}
       />
+      <Stack.Screen name={introduce} component={Introduce} options={options} />
       <Stack.Screen
-        name={screenNames.introduce}
-        component={Introduce}
-        options={{header: () => null}}
-      />
-      <Stack.Screen
-        name={screenNames.panGestureHandler}
+        name={panGestureHandler}
         component={PanGestureHandler}
+        options={options}
       />
       <Stack.Screen
-        name={screenNames.interpolateScrollView}
+        name={interpolateScrollView}
         component={InterpolateScrollView}
+        options={options}
       />
       <Stack.Screen
-        name={screenNames.interpolateColor}
+        name={interpolateColor}
         component={InterpolateColor}
+        options={options}
       />
     </Stack.Navigator>
   );

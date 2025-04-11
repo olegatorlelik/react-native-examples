@@ -1,6 +1,3 @@
-import CircularCarouselAnimation from '@navigations/roots/app/screens/circular-carousel-animation';
-import SegmentedControl from '@navigations/roots/app/screens/segmented-control';
-
 export const screenNames = {
   introduce: 'Introduce',
   panGestureHandler: 'PanGestureHandler',
@@ -21,4 +18,5 @@ export const screenNames = {
   dropdown: 'Dropdown',
   circularCarouselAnimation: 'CircularCarouselAnimation',
   segmentedControl: 'SegmentedControl',
+  shakeText: 'ShakeText',
 };
