@@ -20,6 +20,7 @@ import Dropdown from './screens/dropdown';
 import CircularCarouselAnimation from './screens/circular-carousel-animation';
 import SegmentedControl from './screens/segmented-control';
 import ShakeText from './screens/shake-text';
+import SplitButton from './screens/split-button';
 
 const Stack = createNativeStackNavigator();
 
@@ -45,11 +46,17 @@ const {
   swipeToDelete,
   dropdown,
   shakeText,
+  splitButton,
 } = screenNames;
 
 const AppStack = () => {
   return (
-    <Stack.Navigator initialRouteName={shakeText}>
+    <Stack.Navigator initialRouteName={splitButton}>
+      <Stack.Screen
+        name={splitButton}
+        component={SplitButton}
+        options={options}
+      />
       <Stack.Screen name={shakeText} component={ShakeText} options={options} />
       <Stack.Screen
         name={segmentedControl}

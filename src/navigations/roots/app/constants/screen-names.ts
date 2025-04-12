@@ -19,4 +19,5 @@ export const screenNames = {
   circularCarouselAnimation: 'CircularCarouselAnimation',
   segmentedControl: 'SegmentedControl',
   shakeText: 'ShakeText',
+  splitButton: 'SplitButton',
 };
