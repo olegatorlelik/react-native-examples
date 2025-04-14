@@ -20,4 +20,5 @@ export const screenNames = {
   segmentedControl: 'SegmentedControl',
   shakeText: 'ShakeText',
   splitButton: 'SplitButton',
+  stackedCards: 'StackedCards',
 };
