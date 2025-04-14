@@ -21,4 +21,5 @@ export const screenNames = {
   shakeText: 'ShakeText',
   splitButton: 'SplitButton',
   stackedCards: 'StackedCards',
+  checkboxInteraction: 'CheckboxInteraction',
 };

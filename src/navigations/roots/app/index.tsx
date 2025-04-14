@@ -22,6 +22,7 @@ import SegmentedControl from './screens/segmented-control';
 import ShakeText from './screens/shake-text';
 import SplitButton from './screens/split-button';
 import StackedCards from './screens/stacked-cards';
+import CheckboxInteraction from './screens/checkbox-interaction';
 
 const Stack = createNativeStackNavigator();
 
@@ -49,11 +50,17 @@ const {
   shakeText,
   splitButton,
   stackedCards,
+  checkboxInteraction,
 } = screenNames;
 
 const AppStack = () => {
   return (
-    <Stack.Navigator initialRouteName={stackedCards}>
+    <Stack.Navigator initialRouteName={checkboxInteraction}>
+      <Stack.Screen
+        name={checkboxInteraction}
+        component={CheckboxInteraction}
+        options={options}
+      />
       <Stack.Screen
         name={stackedCards}
         component={StackedCards}
