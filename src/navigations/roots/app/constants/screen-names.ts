@@ -22,4 +22,5 @@ export const screenNames = {
   splitButton: 'SplitButton',
   stackedCards: 'StackedCards',
   checkboxInteraction: 'CheckboxInteraction',
+  storyList: 'StoryList',
 };
