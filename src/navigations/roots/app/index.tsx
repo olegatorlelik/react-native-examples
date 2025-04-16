@@ -25,6 +25,7 @@ import StackedCards from './screens/stacked-cards';
 import CheckboxInteraction from './screens/checkbox-interaction';
 import StoryList from './screens/story-list';
 import PageDots from './screens/page-dots';
+import BarChart from './screens/bar-chart';
 
 const Stack = createNativeStackNavigator();
 
@@ -55,11 +56,13 @@ const {
   checkboxInteraction,
   storyList,
   pageDots,
+  barChart,
 } = screenNames;
 
 const AppStack = () => {
   return (
-    <Stack.Navigator initialRouteName={pageDots}>
+    <Stack.Navigator initialRouteName={barChart}>
+      <Stack.Screen name={barChart} component={BarChart} options={options} />
       <Stack.Screen name={pageDots} component={PageDots} options={options} />
       <Stack.Screen name={storyList} component={StoryList} options={options} />
       <Stack.Screen

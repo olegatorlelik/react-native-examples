@@ -24,4 +24,5 @@ export const screenNames = {
   checkboxInteraction: 'CheckboxInteraction',
   storyList: 'StoryList',
   pageDots: 'PageDots',
+  barChart: 'BarChart',
 };
