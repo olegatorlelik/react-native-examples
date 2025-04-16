@@ -1306,6 +1306,29 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - Yoga
+  - react-native-skia (2.0.0-next.3):
+    - DoubleConversion
+    - glog
+    - hermes-engine
+    - RCT-Folly (= 2024.11.18.00)
+    - RCTRequired
+    - RCTTypeSafety
+    - React
+    - React-callinvoker
+    - React-Core
+    - React-debug
+    - React-Fabric
+    - React-featureflags
+    - React-graphics
+    - React-ImageManager
+    - React-NativeModulesApple
+    - React-RCTFabric
+    - React-rendererdebug
+    - React-utils
+    - ReactCodegen
+    - ReactCommon/turbomodule/bridging
+    - ReactCommon/turbomodule/core
+    - Yoga
   - React-NativeModulesApple (0.78.0):
     - glog
     - hermes-engine
@@ -1866,6 +1889,7 @@ DEPENDENCIES:
   - React-Mapbuffer (from `../node_modules/react-native/ReactCommon`)
   - React-microtasksnativemodule (from `../node_modules/react-native/ReactCommon/react/nativemodule/microtasks`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - "react-native-skia (from `../node_modules/@shopify/react-native-skia`)"
   - React-NativeModulesApple (from `../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-performancetimeline (from `../node_modules/react-native/ReactCommon/react/performance/timeline`)
@@ -1984,6 +2008,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/microtasks"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
+  react-native-skia:
+    :path: "../node_modules/@shopify/react-native-skia"
   React-NativeModulesApple:
     :path: "../node_modules/react-native/ReactCommon/react/nativemodule/core/platform/ios"
   React-perflogger:
@@ -2091,6 +2117,7 @@ SPEC CHECKSUMS:
   React-Mapbuffer: 0502faf46cab8fb89cfc7bf3e6c6109b6ef9b5de
   React-microtasksnativemodule: 663bc64e3a96c5fc91081923ae7481adc1359a78
   react-native-safe-area-context: 286b3e7b5589795bb85ffc38faf4c0706c48a092
+  react-native-skia: 699af6a76ab9d85c8a5ffb93944ff8aca4628e2f
   React-NativeModulesApple: 16fbd5b040ff6c492dacc361d49e63cba7a6a7a1
   React-perflogger: ab51b7592532a0ea45bf6eed7e6cae14a368b678
   React-performancetimeline: bc2e48198ec814d578ac8401f65d78a574358203

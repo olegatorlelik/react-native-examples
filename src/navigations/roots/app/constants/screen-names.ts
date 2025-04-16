@@ -25,4 +25,5 @@ export const screenNames = {
   storyList: 'StoryList',
   pageDots: 'PageDots',
   barChart: 'BarChart',
+  cardProfile: 'CardProfile',
 };
