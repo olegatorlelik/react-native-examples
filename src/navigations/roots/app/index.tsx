@@ -24,6 +24,7 @@ import SplitButton from './screens/split-button';
 import StackedCards from './screens/stacked-cards';
 import CheckboxInteraction from './screens/checkbox-interaction';
 import StoryList from './screens/story-list';
+import PageDots from './screens/page-dots';
 
 const Stack = createNativeStackNavigator();
 
@@ -53,11 +54,13 @@ const {
   stackedCards,
   checkboxInteraction,
   storyList,
+  pageDots,
 } = screenNames;
 
 const AppStack = () => {
   return (
-    <Stack.Navigator initialRouteName={storyList}>
+    <Stack.Navigator initialRouteName={pageDots}>
+      <Stack.Screen name={pageDots} component={PageDots} options={options} />
       <Stack.Screen name={storyList} component={StoryList} options={options} />
       <Stack.Screen
         name={checkboxInteraction}

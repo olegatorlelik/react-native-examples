@@ -23,4 +23,5 @@ export const screenNames = {
   stackedCards: 'StackedCards',
   checkboxInteraction: 'CheckboxInteraction',
   storyList: 'StoryList',
+  pageDots: 'PageDots',
 };
